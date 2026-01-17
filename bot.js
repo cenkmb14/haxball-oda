@@ -1,7 +1,15 @@
-const HBInit = require("haxball-headless");
+const fs = require("fs");
+const vm = require("vm");
+const https = require("https");
+
+const code = `
+${require("fs").readFileSync(__dirname + "/headless-host.js", "utf8")}
+`;
+
+vm.runInThisContext(code);
 
 const room = HBInit({
-  roomName: "🇹🇷 KONSEY",
+  roomName: "🇹🇷 TÜRK LİGİ | 7/24",
   maxPlayers: 16,
   public: true,
   noPlayer: true

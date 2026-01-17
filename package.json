@@ -1,8 +1,1 @@
-{
-  "name": "turk-ligi-oda",
-  "version": "1.0.0",
-  "main": "bot.js",
-  "dependencies": {
-    "haxball-headless": "https://github.com/haxball/haxball-headless/archive/refs/heads/master.zip"
-  }
-}
+
